@@ -27,7 +27,7 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci
 git clone https://github.com/vernesong/OpenClash.git package/OpenClash
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 git clone https://github.com/swxk521/luci-app-eqos.git package/eqos
-git clone https://github.com/Boos4721/OpenWrt-Packages/tree/packages-18.06/luci-app-advanced package/advanced
+git clone https://github.com/sirpdboy/luci-app-advanced.git package/advanced
 
 #添加smartdns
 git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
