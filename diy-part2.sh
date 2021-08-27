@@ -18,11 +18,6 @@ sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_genera
 #修正连接数（by ベ七秒鱼ベ）
 sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=65535' package/base-files/files/etc/sysctl.conf
 
-#修改wifi
-sed -i's/wireless.default_radio2{devidx}.ssid= Xiaomi_2.4G/wireless.default_radio2{devidx}.ssid=luohao/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
-sed -i's/wireless.default_radio1{devidx}.ssid= Xiaomi_5G/wireless.default_radio1{devidx}.ssid=luohao_5G/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
-sed -i's/wireless.default_radio${devidx}.key= 1234567890/wireless.default_radio${devidx}.key=1990luohao/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
-
 # themes添加（svn co 命令意思：指定版本如https://github）
 git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/luci-theme-infinityfreedom
 #git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-theme-opentomcat
