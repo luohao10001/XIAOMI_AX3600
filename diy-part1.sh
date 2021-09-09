@@ -13,9 +13,9 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 #修改wifi
-sed -i 's/wireless.default_radio1.ssid=OpenWrt_2.4G/wireless.default_radio2.ssid=luohao/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+sed -i 's/wireless.default_radio0.ssid=OpenWrt_2.4G/wireless.default_radio0.ssid=luohao/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 sed -i 's/wireless.default_radio1.ssid=OpenWrt_5G/wireless.default_radio1.ssid=luohao_5G/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
-sed -i 's/wireless.default_radio${devidx}.key= 1234567890/wireless.default_radio${devidx}.key=1990luohao/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+sed -i 's/wireless.default_radio${devidx}.key=1234567890/wireless.default_radio${devidx}.key=1990luohao/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
