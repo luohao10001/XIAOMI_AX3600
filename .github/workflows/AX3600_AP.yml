@@ -58,6 +58,7 @@ jobs:
       run: |
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
+        wget -O package/kernel/mac80211/files/lib/wifi/mac80211.sh https://gitlab.com/Boos4721/openwrt/-/raw/master/mac80211.sh
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
     - name: Load custom feeds
       run: |
